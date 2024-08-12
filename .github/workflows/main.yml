@@ -1,0 +1,29 @@
+name: Publish Rocket
+
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: action/checkout@3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore
+        run: dotnet restore ./CurrentTimeService.Api.sln
+
+      - name: Build
+        run: dotnet build ./CurrentTimeService.Api.sln --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish ./CurrentTimeService.Api.sln --configuration Release --no-build
+        
