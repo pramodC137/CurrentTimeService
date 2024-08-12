@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrentTimeService.Api", "CurrentTimeService.Api\CurrentTimeService.Api.csproj", "{28D9329C-FF94-4D26-9389-1DD91CA6C5DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28D9329C-FF94-4D26-9389-1DD91CA6C5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D9329C-FF94-4D26-9389-1DD91CA6C5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D9329C-FF94-4D26-9389-1DD91CA6C5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D9329C-FF94-4D26-9389-1DD91CA6C5DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9F2EF26-11D1-42E0-B2B5-AE08C14DF5AA}
+	EndGlobalSection
+EndGlobal
