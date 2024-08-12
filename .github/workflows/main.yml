@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - main
+    - master
 
 jobs:
   publish:
@@ -19,11 +19,11 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore
-        run: dotnet restore ./CurrentTimeService.Api.sln
+        run: dotnet restore ../CurrentTimeService.Api.sln
 
       - name: Build
-        run: dotnet build ./CurrentTimeService.Api.sln --configuration Release --no-restore
+        run: dotnet build ../CurrentTimeService.Api.sln --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./CurrentTimeService.Api.sln --configuration Release --no-build
+        run: dotnet publish ../CurrentTimeService.Api.sln --configuration Release --no-build
         
